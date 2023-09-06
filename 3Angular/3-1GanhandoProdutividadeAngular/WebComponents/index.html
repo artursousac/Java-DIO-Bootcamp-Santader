@@ -6,29 +6,29 @@
     <title>PORTAL DE NOTICIAS GALATCTICA</title>
     <link rel="stylesheet" href="styles/card.css">
     <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
 </head>
 
 <body>
 
     <div class="container">
 
-        <div class="card">
-            <div class="card_left">
-                <span>By Artur Cavalcante</span>
-                <h1>Darth Vader Contrata Devs</h1>
-                <p>Darth Vader procura desenvolvedores que trabalham com componentes</p>
-            </div>
-            
-            <div class="card_right">
-                <img src="assets/DarthVader.png" alt="">
-            </div>
-        </div>
+        <card-news
+        autor = "Artur"
+        title = "Darth Vader Contrata"
+        link-url = "www.google.com"
+        photo = "assets/DarthVader.png"
+        content = "Darth Vader Procura Desenvolvedores Que Sabem Trabalhar Com Componentes."
+        ></card-news>
+
+        <card-news
+        title = "Yoda Convence República"
+        link-url = "www.google.com/yoda"
+        content = "Yoda Teste República"
+        ></card-news>
 
     </div>
-
-    <card-news></card-news>
-    <card-news></card-news>
-    <card-news></card-news>
+    
 </body>
 
 </html>
